@@ -1,0 +1,91 @@
+body {
+  background-color: #eee;
+  font: 100% "Helvetica Nueue", Helvetica, Arial, sans-serif;
+}
+strong { font-weight: 700 }
+h1 {
+  color: #fb9718;
+  font-size: 3em;
+  font-weight: 700;
+  margin: .5em 0;
+  text-shadow: 0 1px 0 rgba(255,255,255,1);
+}
+h2 {
+  font-size: 1.6em;
+  margin: 0 0 .5em;
+  line-height: 1.3em;
+}
+h3 {
+  font-size: 1.2em;
+  margin: 0 0 .75em;
+  line-height: 1.3em;
+}
+h1 span { font-weight: normal }
+.content {
+  overflow: hidden;
+}
+p {
+  margin: 0 0 1em;
+}
+a.cta-button,
+.cta-button {
+  padding: 20px;
+  background: #3f68e4;
+  float: left;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 19px;
+}
+.main-nav {
+  float: right;
+  margin: 2em 0;
+  border-right: 1px solid #999;
+}
+.main-nav li {
+  float: left;
+  padding: 10px 20px;
+  border-left: 1px solid #999;
+}
+.main-header {
+  overflow: hidden;
+}
+.main-header h1 {
+  float: left;
+}
+.cta-button:hover {
+  background: #555;
+}
+.side-content {
+  float: left;
+  width: 48%;
+  margin: 0 4% 0 0;
+}
+.main-wrap {
+  max-width: 1200px;
+  min-width: 960px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.main-col {
+  float: left;
+  width: 48%;
+}
+.main-col h2 { font-weight: 300; }
+
+.main-footer {
+  margin: 40px 0 0;
+  clear: left;
+}
+.main-footer .main-wrap {
+}
+.hero-placeholder {
+  width: 100%;
+  height: 350px;
+  background: #ddd;
+  box-shadow: inset 0 0 15px rgba(0,0,0,.2);
+}
+.cta-wrap {
+  margin: 3em 0;
+  overflow: hidden;
+}

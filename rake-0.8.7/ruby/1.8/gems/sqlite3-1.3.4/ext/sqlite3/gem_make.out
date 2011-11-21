@@ -1,0 +1,28 @@
+/Users/vasily/.rvm/rubies/ruby-1.8.7-p160/bin/ruby extconf.rb 
+checking for sqlite3.h... yes
+checking for sqlite3_libversion_number() in -lsqlite3... yes
+checking for rb_proc_arity()... no
+checking for sqlite3_initialize()... yes
+checking for sqlite3_backup_init()... yes
+checking for sqlite3_column_database_name()... no
+checking for sqlite3_enable_load_extension()... no
+checking for sqlite3_load_extension()... no
+creating Makefile
+
+make
+Makefile:128: warning: overriding commands for target `/Users/vasily/Documents/WWW/localhost/Diet'
+Makefile:122: warning: ignoring old commands for target `/Users/vasily/Documents/WWW/localhost/Diet'
+gcc -I. -I. -I/Users/vasily/.rvm/rubies/ruby-1.8.7-p160/lib/ruby/1.8/i686-darwin10.6.0 -I. -DHAVE_SQLITE3_INITIALIZE -DHAVE_SQLITE3_BACKUP_INIT  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -fno-common -g -O2  -fno-common -pipe -fno-common   -c backup.c
+gcc -I. -I. -I/Users/vasily/.rvm/rubies/ruby-1.8.7-p160/lib/ruby/1.8/i686-darwin10.6.0 -I. -DHAVE_SQLITE3_INITIALIZE -DHAVE_SQLITE3_BACKUP_INIT  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -fno-common -g -O2  -fno-common -pipe -fno-common   -c database.c
+gcc -I. -I. -I/Users/vasily/.rvm/rubies/ruby-1.8.7-p160/lib/ruby/1.8/i686-darwin10.6.0 -I. -DHAVE_SQLITE3_INITIALIZE -DHAVE_SQLITE3_BACKUP_INIT  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -fno-common -g -O2  -fno-common -pipe -fno-common   -c exception.c
+gcc -I. -I. -I/Users/vasily/.rvm/rubies/ruby-1.8.7-p160/lib/ruby/1.8/i686-darwin10.6.0 -I. -DHAVE_SQLITE3_INITIALIZE -DHAVE_SQLITE3_BACKUP_INIT  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -fno-common -g -O2  -fno-common -pipe -fno-common   -c sqlite3.c
+gcc -I. -I. -I/Users/vasily/.rvm/rubies/ruby-1.8.7-p160/lib/ruby/1.8/i686-darwin10.6.0 -I. -DHAVE_SQLITE3_INITIALIZE -DHAVE_SQLITE3_BACKUP_INIT  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -fno-common -g -O2  -fno-common -pipe -fno-common   -c statement.c
+cc -dynamic -bundle -undefined suppress -flat_namespace -o sqlite3_native.bundle backup.o database.o exception.o sqlite3.o statement.o -L. -L/Users/vasily/.rvm/rubies/ruby-1.8.7-p160/lib -L.     -lruby -lsqlite3  -ldl -lobjc  
+
+make install
+Makefile:128: warning: overriding commands for target `/Users/vasily/Documents/WWW/localhost/Diet'
+Makefile:122: warning: ignoring old commands for target `/Users/vasily/Documents/WWW/localhost/Diet'
+mkdir -p /Users/vasily/Documents/WWW/localhost/Diet
+/usr/bin/install -c -m 0755 sqlite3_native.bundle /Users/vasily/Documents/WWW/localhost/Diet Match/diet-match/rake-0.8.7/ruby/1.8/gems/sqlite3-1.3.4/lib/sqlite3
+install: /Users/vasily/Documents/WWW/localhost/Diet: Inappropriate file type or format
+make: *** [Match/diet-match/rake-0.8.7/ruby/1.8/gems/sqlite3-1.3.4/lib/sqlite3/sqlite3_native.bundle] Error 71

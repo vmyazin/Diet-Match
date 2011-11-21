@@ -1,4 +1,10 @@
 DietMatch::Application.routes.draw do
+  get "pages/contact"
+
+  get "pages/about"
+
+  get "pages/diets"
+
   resources :posts
 
   get "home/index"

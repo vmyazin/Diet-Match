@@ -1,4 +1,6 @@
 DietMatch::Application.routes.draw do
+  get "users/new"
+
   get "pages/contact"
 
   get "pages/about"
@@ -8,6 +10,7 @@ DietMatch::Application.routes.draw do
   match '/diets' => 'pages#diets'
   match '/about' => 'pages#about'
   match '/contact' => 'pages#contact'
+  match '/signup',  :to => 'users#new'
 
   resources :posts
 

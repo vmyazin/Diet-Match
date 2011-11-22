@@ -4,6 +4,10 @@ DietMatch::Application.routes.draw do
   get "pages/about"
 
   get "pages/diets"
+  
+  match '/diets' => 'pages#diets'
+  match '/about' => 'pages#about'
+  match '/contact' => 'pages#contact'
 
   resources :posts
 

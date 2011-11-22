@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Diet Matchmaker</title>
+  <title>Diet Matchmaker - <%= @title %></title>
   <%= stylesheet_link_tag "reset", "scaffold", "main" %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
@@ -13,8 +13,10 @@
     <header class="main-header">
       <h1>Diet <span>Matchmaker</span></h1>
       <ul class="main-nav">
-        <li>About</li>
-        <li>Contact</li>
+        <li><%= link_to 'Home', root_path, :class => is_active?("index") %></li>
+        <li><%= link_to "Diets", diets_path, :class => is_active?("diets") %></li>
+        <li><%= link_to "About", about_path, :class => is_active?("about") %></li>
+        <li><%= link_to "Contact", contact_path, :class => is_active?("contact") %></li>
       </ul>
     </header>
 

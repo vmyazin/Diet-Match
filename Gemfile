@@ -11,6 +11,12 @@ gem "rake", "0.8.7"
 
 gem "simple-navigation"
 
+# add Annotate gem
+group :development do
+  gem 'rspec-rails', '2.6.1'
+  gem 'annotate', '2.4.0'
+end
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

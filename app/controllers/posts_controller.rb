@@ -6,7 +6,7 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json  { render :json => @posts }
+      format.xml  { render :xml => @posts }
     end
   end
 
